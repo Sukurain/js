@@ -2,8 +2,10 @@
 hostname = 23.225.181.59, 24y2if5.xyz, i4433b6.xyz, kmsvip.xyz
 
 [Script]
-# 快猫去广告
-http-response ^https?://(23\.225\.181\.59|24y2if5\.xyz|i4433b6\.xyz|kmsvip\.xyz)/* script-path=https://raw.githubusercontent.com/Sukurain/js/refs/heads/main/quickmiao-ad-blocker.js
+http-response ^https?:\/\/ad\.xmmnsd\.com\/uploads\/images\/.*$ script-response-body remove-ad.js
+http-response ^https?:\/\/69vvnstttaaa888\.dzlndygh\.com\/i\/.*$ script-response-body remove-ad.js
+http-response ^https?:\/\/hongniu\.getehu\.com\/i\/.*$ script-response-body remove-ad.js
+http-response ^https?:\/\/ad\.xmmnsl\.com\/uploads\/images\/.*$ script-response-body remove-ad.js
 
-# 快猫去广告自动填充账号与密码
-http-request ^https?://(23\.225\.181\.59|24y2if5\.xyz|i4433b6\.xyz|kmsvip\.xyz)/* script-path=https://raw.githubusercontent.com/Sukurain/js/refs/heads/main/quickmiao-login.js
+[Script]
+remove-ad.js = type=script,timeout=10,script-path=https://raw.githubusercontent.com/Sukurain/js/refs/heads/main/remove-ad.js
