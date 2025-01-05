@@ -1,0 +1,9 @@
+[MITM]
+hostname = 23.225.181.59, 24y2if5.xyz, i4433b6.xyz, kmsvip.xyz
+
+[Script]
+# 快猫去广告
+http-response ^https?://(23\.225\.181\.59|24y2if5\.xyz|i4433b6\.xyz|kmsvip\.xyz)/* script-response-body https://raw.githubusercontent.com/Sukurain/js/refs/heads/main/quickmiao-ad-blocker.js
+
+# 快猫去广告自动填充账号与密码
+http-request ^https?://(23\.225\.181\.59|24y2if5\.xyz|i4433b6\.xyz|kmsvip\.xyz)/* script-request-body https://raw.githubusercontent.com/Sukurain/js/refs/heads/main/quickmiao-login.js
