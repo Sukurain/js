@@ -1,5 +1,4 @@
-[MITM]
-hostname = 23.225.181.59, 24y2if5.xyz, i4433b6.xyz, kmsvip.xyz
+
 
 [Script]
 http-response ^https?:\/\/ad\.xmmnsd\.com\/uploads\/images\/.*$ script-response-body remove-ad.js
